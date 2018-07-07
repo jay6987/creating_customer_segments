@@ -12298,7 +12298,7 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>回答:</strong></p>
 <p>Grocery和Detergents_paper 以及 Grocery和Milk， Milk和Detergents_paper之间呈现比较强的正相关性。这个结果验证了我尝试的Detergents_paper特征，这个特征与Grocery、Milk呈正相关</p>
-<p>这些特征的数据都不是正态分布，主要集中在较小的地方</p>
+<p>这些特征的数据都不是正态分布，主要集中在较小的地方，更接近正偏态分布。</p>
 
 </div>
 </div>
@@ -13306,7 +13306,7 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>回答:</strong></p>
-<p>异常数据点的索引值为[65, 66, 75, 128, 154]，需要把这些异常点移除，因为这些点容易使分类结果出现偏差。</p>
+<p>多于一个特征下被看作是异常的据点的索引值为[65, 66, 75, 128, 154]，需要把这些异常点移除，因为总特征数为6，而这些点有两个或以上的特征异常，容易使分类结果出现偏差。</p>
 
 </div>
 </div>
@@ -13653,7 +13653,7 @@ div#notebook {
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0xe2d5198&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0xb949588&gt;</pre>
 </div>
 
 </div>
@@ -13711,8 +13711,8 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>回答:</strong></p>
 <p>K-Means聚类算法的优点：算法简单、运行快，容易理解。</p>
-<p>高斯混合模型聚类的优点：结果是样本被分到每个分类的概率，而不是一个确定的分类。</p>
-<p>我选择高斯混合模型聚类算法。数据量不大，不需要运行很快；处理后的数据比较接近正态分布。</p>
+<p>高斯混合模型聚类的优点：结果是样本被分到每个分类的概率，而不是一个确定的分类。此外，针对服从正态分布、偏态分布的数据有比较好的效果。</p>
+<p>我选择高斯混合模型聚类算法。数据量不大，不需要运行很快；处理后的数据比较接近正态分布，用高斯混合模型聚类可能会有更好的结果。</p>
 
 </div>
 </div>
